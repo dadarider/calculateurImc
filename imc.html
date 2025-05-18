@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAlculateur d'imc </title>
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="imc.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculateur d'IMC</h1>
+        <form id="calculForm">
+            <label for="taille">Taille (cm):</label>
+            <input type="number" id="taille" name="taille" required>
+            <label for="poids">Poids (kg):</label>
+            <input type="number" id="poids" name="poids" required>
+            <button type="submit">Calculer l'IMC</button>
+        </form>
+        <div id="resultat"></div>
+        <div id="interpretation"></div>
+        <div id="conseils " >
+            <h2>Conseils pour une meilleure santé</h2>
+            <p>Voici quelques recommandations pour adopter un mode de vie sain :</p>
+            <ul>
+                <li><strong>Alimentation équilibrée :</strong> Privilégiez les fruits, légumes, céréales complètes, protéines maigres et bonnes graisses. Limitez les aliments transformés, sucrés et riches en graisses saturées.</li>
+                <li><strong>Hydratation :</strong> Buvez suffisamment d'eau tout au long de la journée.</li>
+                <li><strong>Activité physique régulière :</strong> Faites au moins 30 minutes d'exercice modéré la plupart des jours de la semaine. Variez les activités : cardio, renforcement musculaire, souplesse.</li>
+                <li><strong>Sommeil suffisant :</strong> Visez 7 à 8 heures de sommeil de qualité par nuit.</li>
+                <li><strong>Gestion du stress :</strong> Trouvez des techniques de relaxation comme la méditation, le yoga ou la respiration profonde.</li>
+                <li><strong>Suivi médical :</strong> Consultez régulièrement votre médecin pour des bilans de santé et suivez ses recommandations.</li>
+            </ul>
+            <p>Ces conseils sont d'ordre général. Il est important de consulter un professionnel de santé pour obtenir des recommandations personnalisées.</p>
+        </div>
+        <div id="etat-sante">
+            <h2>Diagramme d'état de santé</h2>
+            <p>Ce diagramme illustre les différentes catégories de poids en fonction de l'IMC et les risques associés :</p>
+            <ul>
+                <li class="eleve">Insuffisance pondérale</li>
+                <li class="normal">Poids normal</li>
+                <li class="risque">Surpoids</li>
+                <li class="eleve">Obésité</li>
+            </ul>
+            <p>
+                <strong>Note :</strong> Ce diagramme est une simplification. L'état de santé réel peut être influencé par de nombreux autres facteurs.
+                Consultez un professionnel de santé pour une évaluation complète.
+            </p>
+        </div>
+    </div>
+    <script src="imc.js"></script>
+</body>
+</html>
